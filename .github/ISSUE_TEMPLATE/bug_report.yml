@@ -1,0 +1,43 @@
+name: Bug report
+description: Report a calculation or interface problem.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: Use example names and amounts. For vulnerabilities, use the private security reporting link instead.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Explain the issue and what you expected instead.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Include people counts, flavors, portion prices, extras users, and GST if relevant.
+      placeholder: "1. Enter 7 people…"
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected result
+      description: For a calculation problem, include the expected amounts and your arithmetic.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Browser and device
+      placeholder: "Firefox on Linux, or Chrome on Android"
+  - type: input
+    id: version
+    attributes:
+      label: Commit or version
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots or additional context
+      description: Remove personal information before uploading.

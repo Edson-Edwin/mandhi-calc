@@ -3,5 +3,32 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
-  "scripts": { "start": "python3 -m http.server 4173 --directory dist", "test": "node --test tests/calculator.test.mjs" }
+  "scripts": {
+    "start": "python3 -m http.server 4173 --directory dist",
+    "test": "node --test tests/calculator.test.mjs"
+  },
+  "description": "Mandi order planning and consumption-based bill splitting.",
+  "license": "MIT",
+  "author": {
+    "name": "Edson Edwin Ninan",
+    "url": "https://github.com/Edson-Edwin"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Edson-Edwin/mandhi-calc.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Edson-Edwin/mandhi-calc/issues"
+  },
+  "homepage": "https://github.com/Edson-Edwin/mandhi-calc#readme",
+  "engines": {
+    "node": ">=22"
+  },
+  "keywords": [
+    "mandi",
+    "mandhi",
+    "bill-splitting",
+    "gst",
+    "calculator"
+  ]
 }
