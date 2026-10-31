@@ -125,6 +125,8 @@ Despite its name, `dist/` contains the editable application source. There is no 
 
 Serve `dist/` on any static host. No environment variables or server-side services are required. You do not need the existing owner's Sites configuration to run or host your own copy.
 
+For Vercel, import this repository with the repository root as the project root. The included `vercel.json` selects the Other framework preset, skips installation and building, and serves `dist/` as the output directory. This makes `dist/index.html` available at `/`. Add your custom domain in the project's Domains settings after deploying.
+
 Plans, names, and extra selections are stored in `localStorage` on your browser. They are not synchronized between devices or browser origins. Clearing site data removes the saved plan. The app has no analytics or application backend; fonts are requested from Google Fonts, with system-font fallbacks. Copying uses the browser clipboard when available and otherwise offers a selectable text summary.
 
 ## Contributors
